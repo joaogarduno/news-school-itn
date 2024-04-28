@@ -1,0 +1,185 @@
+/*
+
+Author: ;
+URL Author: 
+Version: 1.0
+License: 
+
+*/
+
+/*
+#0E2A44
+#CFA23D
+#FFFFFF
+
+Tintes con el Azul
+#BED9F2
+#DFECF8
+#FFFFFF
+
+Tonos para el Azul
+#42515F
+#808080
+
+TEXT
+#000000
+#040B12
+
+MENU RESPONSIVE
+#06131F
+#262626
+
+*/
+
+/* VARIABLES */
+:root{
+  /*  COLORS */
+  --color-primary: #0E2A44;
+  --color-secondary: #CFA23D;
+  --color-tertiary:#FFFFFF;
+  --color-text:#040B12;
+  --color-menuresponsive: #262626;
+
+  /*  SIZES */
+  --size-xxxs: 1.2rem;
+    --size-xxs: 1.4rem;
+    --size-xs: 1.5rem;
+    --size-smr: 1.6rem;
+    --size-sm: 1.8rem;
+    --size-md: 2rem;
+    --size-lg: 2.5rem;
+    --size-lgr: 3rem;
+    --size-xlg: 4rem;
+    --size-xxlg: 5rem;
+    --size-xxxlg: 6rem;
+
+  /*  FONTS */
+  --font-titles: font-family: "Oswald", sans-serif;;
+  --font-text: font-family: "Raleway", sans-serif;;
+}
+
+/*  */
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+/* -------------------------
+  RESET CSS
+---------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/* font-size: 100%; */
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{
+	display: block;
+}
+/* LINEAS NUEVAS DEL RESET.CSS */
+html{
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-text);
+  font-size: var(--size-smr);
+  /* line-height: 1; */
+	line-height: 1.5;
+  overflow: hidden;
+}
+/* ----> FIN DE LOS CAMBIOS EN RESET.CSS */
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* -------------------------
+  TITLES
+---------------------------- */
+h1,h2, h3, h4, h5, h6{
+  font-family: var(--font-titles);
+  font-size: var(--size-lg);
+  font-weight: bold;
+  letter-spacing: .5px;
+  text-transform: capitalize;
+}
+/* -------------------------
+  SEMANTIC - HTML
+---------------------------- */
+header, nav, main, section, article,
+aside, figure, footer, div{
+  width: 100%;
+}
+/* -------------------------
+  LINKS - IMG - BUTTONS
+---------------------------- */
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+}
+button{
+  border: none;
+  font-size: var(--size-xxxs);
+  font-weight: bold;
+  letter-spacing: normal;
+}
+
+/* -------------------------
+  CONTAINER
+---------------------------- */
+.container{
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  max-width: 100%;
+}
+/* -------------------------
+  ROW & COLUMNS - CONTAINER
+---------------------------- */
+.row-container, .col-container{
+  max-width: 100%;
+}
+.row-container{
+  display: grid;
+}
+/* -------------------------
+  MAIN - SECTION - ARTICLE - ASIDE
+---------------------------- */
+/* .mainContent, .sectionContent, .articleContent, .asideContent, .footerContent */
+.mainContent{
+  display: grid;
+}
