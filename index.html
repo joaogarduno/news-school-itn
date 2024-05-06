@@ -26,42 +26,60 @@ Release date:
   <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Raleway&display=swap" rel="stylesheet">
   <!--  ICONS -->
   <!--  FAVICON -->
-  <link rel="shortcut icon" href="./img/logo-favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" type="image/x-icon" href="./img/logo-favicon.png">
   <!--  CSS -->
-  <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
   <title>New's School | Instituto Tierra Nueva</title>
 </head>
 <body>
   <!--  HEADER -->
   <header id="headerContent" class="header-content">
-    
-    <!-- BURGER -->
-    <div class="menu-burger">
-      <div class="line line1"></div>
-      <div class="line line2"></div>
-      <div class="line line3"></div>
-    </div>
+    <div class="container">
+      <nav class="navContent nav-content">
 
-    <!-- LOGO -->
-    <div class="logo">
-      <a href="index.html">
-        <img src="./img/logo.png" alt="Imagen_del_Logo_del_Instituto">
-        <h1>instituto tierra nueva</h1>
-      </a>      
-    </div>
+        <div class="burger">
+          <div class="lines line1"></div>
+          <div class="lines line2"></div>
+          <div class="lines line3"></div>
+        </div>
+        
+        <!-- LOGO -->
+        <div id="logoContent" class="logo">
+          <a href="index.html">
+            <img src="./img/logo-institute.png" alt="Logo_Instituto Tierra Nueva-Formando Generaciones">
+          </a>
+        </div>
 
-    <!-- MENU -->
-    <nav id="navContent" class="nav-content">
-      <ul class="nav__ul">
-        <li class="nav__ul--li"><a href="index.html">inicio</a></li>
-        <li class="nav__ul--li"><a href="#news">news</a></li>
-        <li class="nav__ul--li"><a href="#event">event</a></li>
-        <li class="nav__ul--li"><a href="#gallery">gallery</a></li>
-        <li class="nav__ul--li"><a href="#sports">sports</a></li>
-        <li class="nav__ul--li"><a href="#institute">institute</a></li>
-        <li class="nav__ul--li"><a href="#contact">contact</a></li>
-      </ul>
-    </nav>
+        <!-- MENU -->
+        <div class="menu-content">
+          <ul>
+            <!-- <li class="nav__ul--li">
+              <a href="index.html">inicio</a>
+            </li> -->
+            <li class="nav__ul--li">
+              <a href="#news">news</a>
+            </li>
+            <li class="nav__ul--li">
+              <a href="#event">event</a>
+            </li>
+            <li class="nav__ul--li">
+              <a href="#gallery">gallery</a>
+            </li>
+            <li class="nav__ul--li">
+              <a href="#sports">sports</a>
+            </li>
+            <li class="nav__ul--li">
+              <a href="#institute">institute</a>
+            </li>
+            <li class="nav__ul--li">
+              <a href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+
+
+      </nav>
+    </div>
   </header>
 
   <!-- BANNER -->
@@ -95,6 +113,9 @@ Release date:
 
   <!--  FOOTER -->
   <footer id="footerContent" class="footer-content"></footer>
+
+  <!-- SCRIPT -->
+  <script type="text/javascript" src="./js/menu.js" ></script>
 
 </body>
 </html>
